@@ -25,6 +25,18 @@ class ducati(bike):
         self.version = version
 
 
+class honda(bike):
+    def __init__(self, version):
+        super().__init__(bike.engine_v4, 'RC214V')
+        self.version = version
+
+
 class suzuki(bike):
     def __init__(self):
         super().__init__(bike.engine_i4, 'GSX-RR')
+
+
+class yamaha(bike):
+    def __init__(self, version):
+        super().__init__(bike.engine_i4, 'YZR-M1')
+        self.version = version
