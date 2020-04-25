@@ -9,7 +9,7 @@ class bike():
 
         self.engine_type = engine_type
         self.code = code
-        self.engine_status
+        self.engine_status = ''
 
     def engine_ignition(self, mode):
         if self.engine_status == mode:
@@ -17,6 +17,12 @@ class bike():
         else:
             self.engine_status = mode
         pass
+
+    def show_enging_status(self):
+        return f"the engine status is {self.engine_status}"
+
+    def show_bike_detail(self):
+        return f"Bike name is {self.code}, the engine config is {self.engine_type}"
 
 
 class ducati(bike):
@@ -27,7 +33,7 @@ class ducati(bike):
 
 class honda(bike):
     def __init__(self, version):
-        super().__init__(bike.engine_v4, 'RC214V')
+        super().__init__(bike.engine_v4, 'RC213V')
         self.version = version
 
 
