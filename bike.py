@@ -40,3 +40,13 @@ class yamaha(bike):
     def __init__(self, version):
         super().__init__(bike.engine_i4, 'YZR-M1')
         self.version = version
+
+
+class aprilia(bike):
+    def __init__(self):
+        super().__init__(bike.engine_v4, 'RS-GP')
+
+
+class ktm(bike):
+    def __init__(self):
+        super().__init__(bike.engine_v4, 'RC16')
