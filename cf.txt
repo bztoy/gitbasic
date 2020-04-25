@@ -1,0 +1,2 @@
+MotoGP Bike spec:
+Engine = {'V4', 'I4'}
